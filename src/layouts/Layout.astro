@@ -1,0 +1,36 @@
+---
+import { t } from "i18next";
+import { HeadHrefLangs } from "astro-i18next/components";
+import Navigation from '../components/Navigation.astro';
+import '../styles/global.css';
+
+interface Props {
+    title: string;
+    description?: string;
+}
+
+const { title, description = "Estudio de arquitectura especializado en diseño innovador y sostenible" } = Astro.props;
+const currentYear = new Date().getFullYear();
+---
+
+<!DOCTYPE html>
+<html lang={Astro.currentLocale || 'es'}>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content={description}>
+    <title>{title}</title>
+    <HeadHrefLangs />
+</head>
+<body>
+    <Navigation />
+
+    <main>
+        <slot />
+    </main>
+
+    <footer>
+        <p>&copy; {currentYear} {t("footer.copyright")}</p>
+    </footer>
+</body>
+</html>

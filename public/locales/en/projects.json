@@ -1,0 +1,30 @@
+{
+  "hero": {
+    "title": "Our Projects",
+    "subtitle": "Explore our portfolio of exceptional architectural designs"
+  },
+  "project1": {
+    "title": "Modern Ocean View House",
+    "description": "Contemporary residential design with expansive panoramic views and spaces integrated with nature."
+  },
+  "project2": {
+    "title": "Sustainable Corporate Building",
+    "description": "Office space combining energy efficiency with cutting-edge design and wellness areas."
+  },
+  "project3": {
+    "title": "Urban Cultural Center",
+    "description": "Public project integrating art, community, and architecture in the heart of the city."
+  },
+  "project4": {
+    "title": "Minimalist Residence",
+    "description": "Single-family home characterized by clean lines, open spaces, and natural light."
+  },
+  "project5": {
+    "title": "Ecological Residential Complex",
+    "description": "Housing development prioritizing sustainability and harmony with the natural environment."
+  },
+  "project6": {
+    "title": "Fine Dining Restaurant",
+    "description": "Gastronomic space where design enhances the culinary experience with unique atmospheres."
+  }
+}

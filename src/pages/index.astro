@@ -1,0 +1,59 @@
+---
+import { t, changeLanguage } from "i18next";
+import { localizePath } from "astro-i18next";
+import Layout from '../layouts/Layout.astro';
+
+changeLanguage("es");
+---
+
+<Layout title={`Heliana Studio - ${t("common:nav.home")}`}>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>{t("hero.title")}</h1>
+        <p>{t("hero.subtitle")}</p>
+        <a href={localizePath('/proyectos')} class="btn">{t("common:cta.viewProjects")}</a>
+    </section>
+
+    <!-- Contenido Principal -->
+    <div class="container">
+        <!-- Introducción -->
+        <section>
+            <h2>{t("intro.title")}</h2>
+            <p>{t("intro.description")}</p>
+        </section>
+
+        <!-- Características -->
+        <section>
+            <h2>{t("features.title")}</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏗️</div>
+                    <h3>{t("features.innovative.title")}</h3>
+                    <p>{t("features.innovative.description")}</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌱</div>
+                    <h3>{t("features.sustainable.title")}</h3>
+                    <p>{t("features.sustainable.description")}</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>{t("features.efficient.title")}</h3>
+                    <p>{t("features.efficient.description")}</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>{t("features.personalized.title")}</h3>
+                    <p>{t("features.personalized.description")}</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Llamada a la acción -->
+        <section class="cta-section">
+            <h2>{t("cta.title")}</h2>
+            <p>{t("cta.subtitle")}</p>
+            <a href={localizePath('/contacto')} class="btn">{t("common:cta.contactNow")}</a>
+        </section>
+    </div>
+</Layout>

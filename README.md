@@ -1,111 +1,154 @@
-# Heliana Studio - Landing Page
+# Heliana Studio - Architectural Studio Website
 
-Landing page moderna y responsive para un estudio de arquitectura, desarrollada con HTML, CSS y JavaScript vanilla (sin frameworks).
+A modern, lightweight, and multilingual website for Heliana Architectural Studio built with Astro.
 
-## Características
+## Features
 
-- ✨ Diseño moderno y profesional
-- 📱 Totalmente responsive (móvil, tablet, desktop)
-- 🎨 Animaciones suaves y transiciones
-- 🚀 Sin dependencias de frameworks (HTML, CSS, JS puro)
-- ♿ Navegación accesible con menú hamburguesa para móviles
-- 📧 Formulario de contacto funcional
-- 🎯 4 páginas completas: Home, Proyectos, Acerca, Contacto
+- ✨ Modern and professional design
+- 📱 Fully responsive (mobile, tablet, desktop)
+- 🌐 Multi-language support (English and Spanish)
+- 🚀 Lightning-fast performance with Astro
+- 🎨 Smooth animations and transitions
+- ♿ Accessible navigation with hamburger menu for mobile
+- 📧 Functional contact form
+- 🎯 4 complete pages: Home, Projects, About, Contact
 
-## Estructura del Proyecto
+## Tech Stack
+
+- **Framework**: Astro 4.0
+- **Internationalization**: astro-i18next + i18next
+- **Styling**: Pure CSS with CSS variables
+- **JavaScript**: Minimal, only for interactive features
+
+## Project Structure
 
 ```
 heliana-studio-landing/
-├── index.html              # Página principal
-├── proyectos.html          # Galería de proyectos
-├── acerca.html             # Información de la empresa
-├── contacto.html           # Formulario de contacto
-├── css/
-│   └── styles.css          # Estilos CSS
-├── js/
-│   └── main.js             # JavaScript principal
-├── assets/
-│   └── images/             # Carpeta para imágenes
-└── README.md               # Este archivo
+├── public/
+│   └── locales/           # Translation files
+│       ├── es/            # Spanish translations
+│       └── en/            # English translations
+├── src/
+│   ├── components/        # Reusable components
+│   │   └── Navigation.astro
+│   ├── layouts/           # Page layouts
+│   │   └── Layout.astro
+│   ├── pages/             # Page routes
+│   │   ├── index.astro    # Home page
+│   │   ├── proyectos.astro # Projects page
+│   │   ├── acerca.astro   # About page
+│   │   └── contacto.astro # Contact page
+│   └── styles/            # Global styles
+│       └── global.css
+├── astro.config.mjs       # Astro configuration
+└── package.json           # Dependencies
 ```
 
-## Cómo Usar
+## Getting Started
 
-### Opción 1: Abrir directamente en el navegador
+### Prerequisites
 
-1. Descarga o clona este repositorio
-2. Abre el archivo `index.html` en tu navegador web
-3. Navega entre las diferentes páginas usando el menú
+- Node.js 18 or higher
+- npm or yarn
 
-### Opción 2: Usar un servidor local
+### Installation
 
-Para una mejor experiencia de desarrollo, puedes usar un servidor local:
-
-**Con Python 3:**
+1. Clone the repository:
 ```bash
-python -m http.server 8000
+git clone <repository-url>
+cd heliana-studio-landing
 ```
 
-**Con Node.js (http-server):**
+2. Install dependencies:
 ```bash
-npx http-server
+npm install
 ```
 
-Luego abre tu navegador en `http://localhost:8000`
+3. Start the development server:
+```bash
+npm run dev
+```
 
-## Personalización
+The site will be available at `http://localhost:4321`
 
-### Cambiar Colores
+### Available Scripts
 
-Los colores se definen en variables CSS en `css/styles.css`. Modifica estas variables para cambiar la paleta de colores:
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run astro` - Run Astro CLI commands
+
+## Multi-Language Support
+
+The website supports both Spanish (default) and English:
+
+- **Spanish**: `http://localhost:4321/` (default)
+- **English**: `http://localhost:4321/en/`
+
+### Adding or Editing Translations
+
+Translation files are located in `public/locales/`:
+
+- Spanish: `public/locales/es/*.json`
+- English: `public/locales/en/*.json`
+
+Each page has its own translation file:
+- `common.json` - Navigation, footer, and shared content
+- `home.json` - Home page content
+- `projects.json` - Projects page content
+- `about.json` - About page content
+- `contact.json` - Contact page content
+
+### Language Switcher
+
+The language switcher is included in the navigation bar and allows users to seamlessly switch between Spanish and English.
+
+## Customization
+
+### Changing Colors
+
+Colors are defined as CSS variables in `src/styles/global.css`:
 
 ```css
 :root {
-    --primary-color: #2c3e50;      /* Color principal */
-    --secondary-color: #e67e22;    /* Color secundario */
-    --accent-color: #3498db;       /* Color de acento */
-    --text-color: #333;            /* Color del texto */
-    --light-bg: #f8f9fa;          /* Fondo claro */
-    --white: #ffffff;              /* Blanco */
+    --primary-color: #2c3e50;      /* Main color */
+    --secondary-color: #e67e22;    /* Secondary color */
+    --accent-color: #3498db;       /* Accent color */
+    --text-color: #333;            /* Text color */
+    --light-bg: #f8f9fa;          /* Light background */
+    --white: #ffffff;              /* White */
 }
 ```
 
-### Agregar Imágenes Reales
+### Adding Real Images
 
-1. Coloca tus imágenes en la carpeta `assets/images/`
-2. Modifica los elementos con clase `.project-image` y `.about-image` en los archivos HTML
-3. Ejemplo:
+1. Place your images in the `public/` folder (e.g., `public/images/`)
+2. Update the project cards and other image placeholders in the page files
+3. Example:
 
-```html
-<!-- Reemplaza esto: -->
+```astro
+<!-- Replace placeholder: -->
 <div class="project-image">
-    <span>Casa Moderna Vista al Mar</span>
+    <span>Project Title</span>
 </div>
 
-<!-- Por esto: -->
+<!-- With real image: -->
 <div class="project-image">
-    <img src="assets/images/proyecto1.jpg" alt="Casa Moderna Vista al Mar">
+    <img src="/images/project1.jpg" alt="Project Title">
 </div>
 ```
 
-### Modificar Contenido
+### Connecting the Contact Form
 
-- **Nombre del estudio**: Busca "Heliana Studio" en todos los archivos HTML y reemplázalo
-- **Proyectos**: Edita el contenido en `proyectos.html`
-- **Información de la empresa**: Modifica `acerca.html`
-- **Datos de contacto**: Actualiza la información en `contacto.html`
+The contact form currently shows a success message. To connect it to a backend:
 
-### Conectar el Formulario de Contacto
-
-El formulario actualmente solo muestra un mensaje de éxito. Para conectarlo a un backend:
-
-1. Abre `js/main.js`
-2. Busca la función del formulario (línea ~40)
-3. Reemplaza el `console.log` con una llamada a tu API:
+1. Open `src/pages/contacto.astro`
+2. Find the `<script>` section
+3. Replace the form submission logic with your API call:
 
 ```javascript
-// Ejemplo con fetch API
-fetch('https://tu-api.com/contacto', {
+// Example with fetch API
+fetch('https://your-api.com/contact', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
@@ -114,7 +157,6 @@ fetch('https://tu-api.com/contacto', {
 })
 .then(response => response.json())
 .then(data => {
-    // Mostrar mensaje de éxito
     successMessage.classList.add('show');
 })
 .catch(error => {
@@ -122,35 +164,74 @@ fetch('https://tu-api.com/contacto', {
 });
 ```
 
-## Funcionalidades JavaScript
+## Building for Production
 
-- **Menú Hamburguesa**: Se activa automáticamente en dispositivos móviles
-- **Formulario de Contacto**: Validación y mensaje de confirmación
-- **Animaciones al Scroll**: Los elementos aparecen suavemente al hacer scroll
-- **Scroll Suave**: Navegación suave entre secciones
+To create a production build:
 
-## Navegadores Compatibles
+```bash
+npm run build
+```
 
-- Chrome (últimas 2 versiones)
-- Firefox (últimas 2 versiones)
-- Safari (últimas 2 versiones)
-- Edge (últimas 2 versiones)
-- Opera (últimas 2 versiones)
+The built files will be in the `dist/` directory, ready to be deployed to any static hosting service:
+
+- Netlify
+- Vercel
+- GitHub Pages
+- Cloudflare Pages
+- AWS S3
+- Any web server
+
+## Deployment
+
+### Netlify
+
+1. Connect your repository to Netlify
+2. Build command: `npm run build`
+3. Publish directory: `dist`
+
+### Vercel
+
+1. Import your repository on Vercel
+2. Framework preset: `Astro`
+3. Deploy!
+
+### GitHub Pages
+
+1. Update `astro.config.mjs` with your site URL
+2. Run `npm run build`
+3. Deploy the `dist/` folder
+
+## Browser Support
+
+- Chrome (latest 2 versions)
+- Firefox (latest 2 versions)
+- Safari (latest 2 versions)
+- Edge (latest 2 versions)
+- Opera (latest 2 versions)
 
 ## Responsive Breakpoints
 
-- **Desktop**: 1200px y superior
+- **Desktop**: 1200px and above
 - **Tablet**: 768px - 1199px
-- **Móvil**: Hasta 767px
+- **Mobile**: Up to 767px
 
-## Licencia
+## Performance
 
-Este proyecto es de código abierto y está disponible para uso personal y comercial.
+Astro delivers exceptional performance:
+- Static HTML generation
+- Minimal JavaScript
+- Optimized CSS
+- Fast page loads
+- SEO-friendly
 
-## Soporte
+## License
 
-Para preguntas o problemas, por favor abre un issue en el repositorio.
+This project is open source and available for personal and commercial use.
+
+## Support
+
+For questions or issues, please open an issue in the repository.
 
 ---
 
-Desarrollado con ❤️ para Heliana Studio
+Built with ❤️ using Astro for Heliana Studio

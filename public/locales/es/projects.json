@@ -1,0 +1,30 @@
+{
+  "hero": {
+    "title": "Nuestros Proyectos",
+    "subtitle": "Explora nuestra cartera de diseños arquitectónicos excepcionales"
+  },
+  "project1": {
+    "title": "Casa Moderna Vista al Mar",
+    "description": "Diseño residencial contemporáneo con amplias vistas panorámicas y espacios integrados con la naturaleza."
+  },
+  "project2": {
+    "title": "Edificio Corporativo Sostenible",
+    "description": "Espacio de oficinas que combina eficiencia energética con diseño vanguardista y áreas de bienestar."
+  },
+  "project3": {
+    "title": "Centro Cultural Urbano",
+    "description": "Proyecto público que integra arte, comunidad y arquitectura en el corazón de la ciudad."
+  },
+  "project4": {
+    "title": "Residencia Minimalista",
+    "description": "Vivienda unifamiliar caracterizada por líneas limpias, espacios abiertos y luz natural."
+  },
+  "project5": {
+    "title": "Complejo Residencial Ecológico",
+    "description": "Desarrollo habitacional que prioriza la sostenibilidad y la convivencia con el entorno natural."
+  },
+  "project6": {
+    "title": "Restaurante de Autor",
+    "description": "Espacio gastronómico donde el diseño potencia la experiencia culinaria con ambientes únicos."
+  }
+}

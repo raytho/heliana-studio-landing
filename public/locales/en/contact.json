@@ -1,0 +1,23 @@
+{
+  "hero": {
+    "title": "Contact Us",
+    "subtitle": "We're here to help bring your project to life"
+  },
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "submit": "Send Message",
+    "success": "Thank you for your message! We'll get in touch with you soon."
+  },
+  "info": {
+    "title": "Contact Information",
+    "address": "Address",
+    "addressValue": "123 Main Avenue, City",
+    "phone": "Phone",
+    "phoneValue": "+1 234 567 890",
+    "email": "Email",
+    "emailValue": "info@helianastudio.com"
+  }
+}

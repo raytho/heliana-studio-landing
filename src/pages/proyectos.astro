@@ -1,0 +1,79 @@
+---
+import { t, changeLanguage } from "i18next";
+import Layout from '../layouts/Layout.astro';
+
+changeLanguage("es");
+---
+
+<Layout title={`Heliana Studio - ${t("common:nav.projects")}`}>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>{t("hero.title")}</h1>
+        <p>{t("hero.subtitle")}</p>
+    </section>
+
+    <!-- Galería de Proyectos -->
+    <div class="container">
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <span>{t("project1.title")}</span>
+                </div>
+                <div class="project-info">
+                    <h3>{t("project1.title")}</h3>
+                    <p>{t("project1.description")}</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <span>{t("project2.title")}</span>
+                </div>
+                <div class="project-info">
+                    <h3>{t("project2.title")}</h3>
+                    <p>{t("project2.description")}</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <span>{t("project3.title")}</span>
+                </div>
+                <div class="project-info">
+                    <h3>{t("project3.title")}</h3>
+                    <p>{t("project3.description")}</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <span>{t("project4.title")}</span>
+                </div>
+                <div class="project-info">
+                    <h3>{t("project4.title")}</h3>
+                    <p>{t("project4.description")}</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <span>{t("project5.title")}</span>
+                </div>
+                <div class="project-info">
+                    <h3>{t("project5.title")}</h3>
+                    <p>{t("project5.description")}</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <span>{t("project6.title")}</span>
+                </div>
+                <div class="project-info">
+                    <h3>{t("project6.title")}</h3>
+                    <p>{t("project6.description")}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>
