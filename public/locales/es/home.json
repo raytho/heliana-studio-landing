@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "title": "Diseñamos Espacios que Inspiran",
+    "subtitle": "Transformamos ideas en arquitectura excepcional con diseño innovador y sostenible"
+  },
+  "intro": {
+    "title": "Bienvenidos a Heliana Studio",
+    "description": "Somos un estudio de arquitectura comprometido con la excelencia en el diseño. Creamos espacios únicos que combinan funcionalidad, estética y sostenibilidad, adaptándonos a las necesidades específicas de cada cliente."
+  },
+  "features": {
+    "title": "¿Por qué elegirnos?",
+    "innovative": {
+      "title": "Diseño Innovador",
+      "description": "Creamos soluciones arquitectónicas únicas que se destacan por su originalidad y funcionalidad."
+    },
+    "sustainable": {
+      "title": "Sostenibilidad",
+      "description": "Comprometidos con el medio ambiente, integramos prácticas sostenibles en cada proyecto."
+    },
+    "efficient": {
+      "title": "Eficiencia",
+      "description": "Optimizamos recursos y tiempos sin comprometer la calidad del resultado final."
+    },
+    "personalized": {
+      "title": "Personalización",
+      "description": "Cada proyecto es único y se adapta completamente a las necesidades del cliente."
+    }
+  },
+  "cta": {
+    "title": "¿Tienes un proyecto en mente?",
+    "subtitle": "Estamos listos para convertir tu visión en realidad"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Proyectos",
+    "about": "Acerca",
+    "contact": "Contacto"
+  },
+  "footer": {
+    "copyright": "Heliana Studio. Todos los derechos reservados."
+  },
+  "cta": {
+    "viewProjects": "Ver Nuestros Proyectos",
+    "contactNow": "Contáctanos Ahora"
+  }
+}

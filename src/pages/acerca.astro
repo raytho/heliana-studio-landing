@@ -1,0 +1,60 @@
+---
+import { t, changeLanguage } from "i18next";
+import Layout from '../layouts/Layout.astro';
+
+changeLanguage("es");
+---
+
+<Layout title={`Heliana Studio - ${t("common:nav.about")}`}>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>{t("hero.title")}</h1>
+        <p>{t("hero.subtitle")}</p>
+    </section>
+
+    <!-- Contenido Principal -->
+    <div class="container">
+        <!-- Misión y Visión -->
+        <div class="about-content">
+            <div class="about-text">
+                <h3>{t("mission.title")}</h3>
+                <p>{t("mission.description")}</p>
+
+                <h3>{t("vision.title")}</h3>
+                <p>{t("vision.description")}</p>
+            </div>
+            <div class="about-image">
+                <span>Heliana Studio</span>
+            </div>
+        </div>
+
+        <!-- Valores -->
+        <section>
+            <h2>{t("values.title")}</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3>{t("values.excellence")}</h3>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3>{t("values.innovation")}</h3>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>{t("values.sustainability")}</h3>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>{t("values.collaboration")}</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipo -->
+        <section>
+            <h2>{t("team.title")}</h2>
+            <p>{t("team.description")}</p>
+        </section>
+    </div>
+</Layout>

@@ -1,0 +1,23 @@
+{
+  "hero": {
+    "title": "Contáctanos",
+    "subtitle": "Estamos aquí para ayudarte a hacer realidad tu proyecto"
+  },
+  "form": {
+    "name": "Nombre",
+    "email": "Correo Electrónico",
+    "phone": "Teléfono",
+    "message": "Mensaje",
+    "submit": "Enviar Mensaje",
+    "success": "¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto."
+  },
+  "info": {
+    "title": "Información de Contacto",
+    "address": "Dirección",
+    "addressValue": "Av. Principal 123, Ciudad",
+    "phone": "Teléfono",
+    "phoneValue": "+1 234 567 890",
+    "email": "Email",
+    "emailValue": "info@helianastudio.com"
+  }
+}

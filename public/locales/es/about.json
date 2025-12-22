@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "title": "Acerca de Nosotros",
+    "subtitle": "Conoce al equipo detrás de Heliana Studio"
+  },
+  "mission": {
+    "title": "Nuestra Misión",
+    "description": "En Heliana Studio, nuestra misión es transformar espacios en experiencias memorables. Creemos que la arquitectura tiene el poder de mejorar la calidad de vida de las personas y el entorno que las rodea."
+  },
+  "vision": {
+    "title": "Nuestra Visión",
+    "description": "Ser reconocidos como un referente en diseño arquitectónico innovador y sostenible, creando proyectos que perduren en el tiempo y generen un impacto positivo en las comunidades."
+  },
+  "values": {
+    "title": "Nuestros Valores",
+    "excellence": "Excelencia en cada detalle",
+    "innovation": "Innovación constante",
+    "sustainability": "Compromiso con la sostenibilidad",
+    "collaboration": "Colaboración con nuestros clientes"
+  },
+  "team": {
+    "title": "Nuestro Equipo",
+    "description": "Contamos con un equipo multidisciplinario de arquitectos, diseñadores e ingenieros apasionados por crear espacios excepcionales. Cada miembro aporta su experiencia única para garantizar la excelencia en todos nuestros proyectos."
+  }
+}
