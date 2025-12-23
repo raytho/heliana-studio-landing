@@ -1,6 +1,5 @@
 ---
 import { t } from "i18next";
-import { HeadHrefLangs } from "astro-i18next/components";
 import Navigation from '../components/Navigation.astro';
 import '../styles/global.css';
 
@@ -11,16 +10,25 @@ interface Props {
 
 const { title, description = "Estudio de arquitectura especializado en diseño innovador y sostenible" } = Astro.props;
 const currentYear = new Date().getFullYear();
+const currentLocale = Astro.currentLocale || 'es';
+const currentPath = Astro.url.pathname;
+
+// Generate alternate language URLs
+const baseUrl = Astro.site || 'http://localhost:4321';
+const esUrl = currentLocale === 'en' ? currentPath.replace('/en', '') : currentPath;
+const enUrl = currentLocale === 'es' ? '/en' + currentPath : currentPath;
 ---
 
 <!DOCTYPE html>
-<html lang={Astro.currentLocale || 'es'}>
+<html lang={currentLocale}>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content={description}>
     <title>{title}</title>
-    <HeadHrefLangs />
+    <link rel="alternate" hreflang="es" href={baseUrl + esUrl} />
+    <link rel="alternate" hreflang="en" href={baseUrl + enUrl} />
+    <link rel="alternate" hreflang="x-default" href={baseUrl + esUrl} />
 </head>
 <body>
     <Navigation />

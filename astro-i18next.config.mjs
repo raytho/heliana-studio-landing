@@ -3,6 +3,7 @@ export default {
   locales: ['es', 'en'],
   namespaces: ['common', 'home', 'projects', 'about', 'contact'],
   defaultNamespace: 'common',
+  supportedLanguages: ['es', 'en'],
   routes: {
     en: {
       'proyectos': 'projects',
